@@ -20,7 +20,7 @@ h5.h6 {
     margin: 0;
 }
 
-.container {
+.header_container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -89,6 +89,49 @@ h5.h6 {
 }
 
 
+.container{
+    background-color: black;
+    border-style: solid;
+    border-color: red;
+
+    position: absolute;
+    width: 1170px;
+    max-width: 100%;
+    margin: 200px 300px;
+
+}
+
+@media(max-width:1200px){
+    .container{
+        max-width: 970px;
+        width: 100%;
+    }
+}
+
+@media(max-width:970px){
+    .container{
+        max-width: 850px;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:850px){
+    .container{
+        max-width: 720px;
+        width: 100%;
+    }
+}
+
+@media(max-width:767px){
+    .container{
+        max-width: none;
+        width: 100%;
+    }
+}
+
+
+/* 
 .bg_inner {
     width: 65%;
     height:70%;
@@ -99,7 +142,7 @@ h5.h6 {
     background-color: black;
     border-style: solid;
     border-color: red;
-}
+} */
 
 
 .nav_link:hover {
@@ -122,13 +165,13 @@ h5.h6 {
 .logo {
     padding-top: 270px;
     padding-left: 350px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
 .logo_img {
-    width: 20%;
-    display: block;
+    /* width: 20%; */
+    /* display: block; */
     position: absolute;
     left:5%;
     top: 4%;
@@ -136,9 +179,9 @@ h5.h6 {
 }
 
 .under_text {
-    width: 30%;
+    /* width: 30%; */
     /* position: absolute; */
-    display: block;
+    /* display: block; */
     position: absolute;
     margin: 220px 40px;
     top: 0;
