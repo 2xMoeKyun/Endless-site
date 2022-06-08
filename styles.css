@@ -1,32 +1,33 @@
-
-body{
+body {
     margin: 0;
     /* color: #333; */
 }
 
-.bg{
+.bg {
     width: 100%;
     height: 100vh;
     background-image:
-    url("bg.jpg");
+        url("newbg.png");
     align-self: center;
-    -webkit-background-size: cover;
-    background-size: cover;
 
 }
 
-h1,h2,h3,h4,h5.h6{
+h1,
+h2,
+h3,
+h4,
+h5.h6 {
     margin: 0;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     color: white;
 }
 
-.header{
+.header {
     margin-top: 30px;
     width: 100%;
     position: absolute;
@@ -36,26 +37,29 @@ h1,h2,h3,h4,h5.h6{
     z-index: 1000;
 }
 
-.header_inner{
+.header_inner {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_logo{
-    font-size: 30px;
-    font-weight: 700;
-    color: white;
+.header_logo {
+    margin-left: -250px;
 }
 
-.nav{
+.Main_logo {
+    width: 45%;
+    height: 45%;
+}
+
+.nav {
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.nav_link{
-    
+.nav_link {
+
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
@@ -69,7 +73,7 @@ h1,h2,h3,h4,h5.h6{
 
 }
 
-.nav_link::after{
+.nav_link::after {
     content: "";
     /* display: none; */
     width: 100%;
@@ -78,18 +82,67 @@ h1,h2,h3,h4,h5.h6{
     background-color: yellow;
     position: absolute;
 
-    top: 100%;  
+    top: 100%;
     left: 0;
     z-index: 1;
-    
+
 }
 
 
-.nav_link:hover{
+.bg_inner {
+    width: 65%;
+    height:70%;
+    position: absolute;
+    display: block;
+    margin: 200px 300px;
+
+    background-color: black;
+    border-style: solid;
+    border-color: red;
+}
+
+
+.nav_link:hover {
     color: yellow;
 }
 
-.nav_link:hover::after{
-   /* display: block; */
-   visibility: visible;
+.nav_link:hover::after {
+    /* display: block; */
+    visibility: visible;
+}
+
+
+.footer {
+    background-color: rgb(38, 0, 255);
+    width: 100%;
+    height: 50vh;
+}
+
+
+.logo {
+    padding-top: 270px;
+    padding-left: 350px;
+    width: 100%;
+}
+
+
+.logo_img {
+    width: 20%;
+    display: block;
+    position: absolute;
+    left:5%;
+    top: 4%;
+
+}
+
+.under_text {
+    width: 30%;
+    /* position: absolute; */
+    display: block;
+    position: absolute;
+    margin: 220px 40px;
+    top: 0;
+    left: 0;
+    border: none;
+    
 }
