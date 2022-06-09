@@ -1,20 +1,231 @@
-.container{
-    /* border-style: solid;
+.container {
+    background-color: black;
+
+    border-style: solid;
     border-color: red;
-    color: white; */
+    color: white;
 
     max-width: 1170px;
     margin: 0 auto;
+
+    /* margin-top: 200px; */
+
+    height: 90vh;
 }
 
-.nav{
-    
+
+.header_container {
+    margin-top: 50px;
+    width: 100%;
 }
 
-.header_link{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
+@media (max-width:1170px) {
+    .container {
+        max-width: 1020px;
+    }
+}
+
+@media (max-width:1020px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (max-width:920px) {
+    .container {
+        max-width: 780px;
+    }
+}
+
+@media (max-width:780px) {
+    .container {
+        max-width: 719px;
+    }
+}
+
+@media (max-width:719px) {
+    .container {
+        max-width: none;
+    }
+}
+
+.nav {
+
+
+    font-size: 14px;
+    text-transform: uppercase;
+
+    text-align: center;
+    margin: 20px;
+    margin-right: 20px;
+
+
+}
+
+.header_link {
+
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
     position: relative;
-    
+    margin: 0 25px;
+
+    transition: color 0.3s linear;
 }
+
+.header_link:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: none;
+    background-color: white;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+}
+
+
+.header_link:hover {
+    color:red;
+}
+
+.header_link:hover::after {
+    display: block;
+}
+
+
+
+.image_block {
+    margin: 6px 0 0 30px;
+}
+
+.book_text {
+    font-family: Gothic;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: -13px;
+    width: 35%;
+}
+
+.main_text {
+    font-family: Gothic;
+    font-size: 14px;
+    margin-left: 500px;
+    margin-top: -400px;
+
+}
+
+.main_head-text {
+    text-align: center;
+    margin-left: -50px;
+}
+
+
+@font-face {
+    font-family: Gothic;
+    src: url("gothic.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Gothic;
+    font-size: 40px;
+}
+
+.lich {
+    margin-left: 680px;
+    margin-top: 100px;
+}
+
+.lich_img {
+    width: 70%;
+    position: relative;
+}
+
+
+.download {
+    margin-top: 85px;
+    margin-left: 100px;
+}
+
+
+
+.download_button {
+    width: 25%;
+    height: 8vh;
+
+    font-family: Gothic;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+
+    color: white;
+
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.download_button:hover {
+    background-color: rgb(97, 90, 90);
+}
+
+
+
+.footer_container{
+    width: 100%;
+    margin-bottom: 50px;
+
+
+    /* border-style: solid;
+    border-color: red; */
+}
+
+.footer_block{
+    background-color: black;
+
+    /* border-style: solid;
+    border-color: red; */
+    background-color: black;
+    color: white;
+
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+.footer_link{
+    font-size: 18px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+.footer_link:hover{
+    color: red;
+}
+
+
+
+.link_text{
+    font-family: Gothic;
+}
+
+.e-mail{
+    color: white;
+    margin-top: -37px;
+    font-family: Gothic;
+    text-align: right;
+}
+
